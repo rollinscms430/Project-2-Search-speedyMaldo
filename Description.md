@@ -89,7 +89,7 @@ as your reference.
 Find a ladder connecting `snakes` and `brains`.
 
 Hint: For fast word lookups, make a dictionary with all of the words
-in the list as its keys. The values for each key can be anything.
+in the list as its keys. The dictionary's values can be anything.
 You can then check if a word is in the list using
 
 ```
