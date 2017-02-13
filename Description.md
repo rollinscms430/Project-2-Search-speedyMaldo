@@ -86,7 +86,7 @@ cat
 You may assume the length of the word remains constant. Use `words.txt`
 as your reference.
 
-Find a ladder connecting snakes and brains.
+Find a ladder connecting `snakes` and `brains`.
 
 Hint: For fast word lookups, make a dictionary with all of the words
 in the list as its keys. The values for each key can be anything.
