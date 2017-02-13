@@ -16,14 +16,14 @@ scan through the word list and print each group of words with the
 same letters on a single line. For example,
 
 ```
-    ['buffered', 'rebuffed']
-    ['biders', 'brides', 'debris', 'rebids']
-    ['gateman', 'magenta', 'magnate']
-    ['stewed', 'tweeds']
-    ['basest', 'basset', 'bastes', 'beasts']
-    ['rationalizes', 'realizations']
-    ['night', 'thing']
-    ['dares', 'dears', 'rased', 'reads']
+['buffered', 'rebuffed']
+['biders', 'brides', 'debris', 'rebids']
+['gateman', 'magenta', 'magnate']
+['stewed', 'tweeds']
+['basest', 'basset', 'bastes', 'beasts']
+['rationalizes', 'realizations']
+['night', 'thing']
+['dares', 'dears', 'rased', 'reads']
 ```   
    
 You could do this by comparing every word in the word list to
@@ -36,9 +36,12 @@ The values in the dictionary would be the lists of words that are
 anagrams of each other. What shoud the keys be?
 
 Hints:
-    - If word is a string, what is sorted(word)?
-    - You can turn a list into a tuple using tuple()
-    - Tuples can be dictionary keys
+
+  - If word is a string, what is sorted(word)?
+    
+  - You can turn a list into a tuple using tuple()
+    
+  - Tuples can be dictionary keys
     
     
     
@@ -46,17 +49,17 @@ Hints:
 
 This is inspired by a problem from `leetcode.com`.
 
-Given a start_word and an end_word, generate a chain of words that 
+Given a `start_word` and an `end_word`, generate a chain of words that 
 connects the two. Each word in the chain may differ from the previous
 word by only one letter.
 
 For example,
 
 ```    
-    dog
-    cog
-    cot
-    cat
+dog
+cog
+cot
+cat
 ``` 
 
 You may assume the length of the word remains constant. Use `words.txt`
