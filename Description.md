@@ -1,13 +1,36 @@
 # Project 2: Solving Problems by Searching
 
-*If you choose, you may work with a partner to complete this
-assignment.*
-
 **Due Sunday, February 26 at 11:59 PM**
+
+*If you choose, you may work with a partner to complete this assignment.*
 
 ## Description
 
+This project will let you solve some problems using breadth-first
+and depth-first searching strategies.
 
+For each problem, think carefully about how to design an effective
+solution. This includes:
+
+  - Choice of search algorithm (breadth vs. depth, iterative vs. recursive)
+  
+  - How to represent the problem state and solution path (classes may be helpful for problems 2 and 3)
+  
+  - How to implement state transitions
+  
+  - How to check for feasibility and eliminate unproductive search paths
+  
+There may be many different ways of approaching these problems that are equally valid.
+Part of the challenge of this project is thinking carefully about the design decisions
+you make, their tradeoffs, and their implementation details.
+
+Submit your project through GitHub, with one Python script for each problem. If you work
+with a partner, you will both submit the same code and receive the same grade.
+
+For each problem, I'll check the output of your program and examine the details of your implementation.
+To receive full credit, your program must produce the correct output, you must use 
+a breadth-first or depth-first search, and you must clearly explain all relevant details of your
+problem formulation and implementation.
 
 ## Warm-Up: Anagrams
 
@@ -42,8 +65,6 @@ Hints:
   - You can turn a list into a tuple using tuple()
     
   - Tuples can be dictionary keys
-    
-    
     
 ## Word Ladders
 
@@ -90,19 +111,19 @@ s r t r
 h m i a
 ```
 
-some of the words you can generate include tars, hermits, gates,
-miters, great, irate, guar, and gathers.
+some of the words you can generate include `tars`, `hermits`, `gates`,
+`miters`, `great`, `irate`, `guar`, and `gathers`.
 
 The same grid position can't be used multiple times in one word.
 
 Write a program that can find as many words as possible in a 4x4
-grid. Any word in words.txt is valid.
+grid. Any word in `words.txt` is valid.
 
 I recommend having a search method that takes a starting location in
 the grid as its input argument. The search routine then returns all
 the words that can be built off of that starting letter. For example,
 search(1, 3) would return all words that can be built starting with
-the s in the second row. Call this method 16 times, once for each 
+the `s` in the second row. Call this method 16 times, once for each 
 starting position.
 
 Some other considerations:
@@ -116,7 +137,7 @@ Some other considerations:
     ```
     [(1, 3), (2, 2), (1, 1), (2, 1)]
     ```    
-    corresponds to the positions of the word star.     
+    corresponds to the positions of the word `star`.     
     
   - You can check if an item is in a list using the in operator:    
     ```
@@ -129,5 +150,3 @@ Some other considerations:
     prefixes can never lead to useful solutions and should be 
     dropped from the search. Perhaps a dictionary that stores all
     prefixes in the word list would help?
-    
-
