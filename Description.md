@@ -103,26 +103,19 @@ the s in the second row. Call this method 16 times, once for each
 starting position.
 
 Some other considerations:
-
     - Use the example grid for testing.
-
     - You'll need a way to keep track of the sequence of letters
     belonging to each candidate word, to ensure that you don't use
     the same square twice. A list of tuples might do the job. For
-    example, 
-        
+    example,    
         ```
         [(1, 3), (2, 2), (1, 1), (2, 1)]
-        ```
-        
-    corresponds to the positions of the word star.
-        
-    - You can check if an item is in a list using the in operator:
-    
+        ```    
+    corresponds to the positions of the word star.     
+    - You can check if an item is in a list using the in operator:    
     ```
         if position in position_list:
-    ```
-    
+    ```    
     - To make this efficient, you shouldn't waste time exploring
     paths that can't lead to solutions. For example, there are no
     words in the list that begin with gt-, fn-, or ds-, so those 
